@@ -1,3 +1,3 @@
 # TestGi
-hello it is asimple test of getting started with github
-Github tutorial
+it is a ull description
+ithub tutorial
