@@ -6,8 +6,8 @@ class SingleSwitchTopo(Topo):
  #"single ewitch connected to n hosts"
  def __init__(self,n=2,**opts):
  #initialize topo
- Topo.__init__(self,**opts):
- sitch =self.addSwitch('s1')
+ Topo.__init__(self, **opts)
+ switch =self.addSwitch('s1')
  #range 
  for h in range(n):
  host = self.addHost('h%s'(h+1))
