@@ -5,11 +5,11 @@ from mininet.link import TCLink
 class singleTopologyPerformance(Topo):
           def __init__(self, k=3):
                     Topo.__init__(self)
-                     switch=self.addSwitch('switch1')
-                     linkoptions=dict(bw=10,delay='10ms',max_queue_size=1000,use_htb=true)
+                    switch=self.addSwitch('switch1')
+                    linkoptions=dict(bw=10,delay='10ms',max_queue_size=1000,use_htb=true)
                     for h in range(k):
-                              host=self.addHost('h%s'%(h+1),cpu=.4/k)
-                               self.addLink(host,switch, **linloptions)
+                                host=self.addHost('h%s'%(h+1),cpu=.4/k)
+                                self.addLink(host,switch, **linloptions)
  def perfprmanceTest():
         topo=SingleTopologyPerformance(k=5)
         net=Mininet(topo=topo,host=CPULimitedHost,link=TCLink)
