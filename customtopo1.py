@@ -24,8 +24,8 @@ def performanceTest():
         net.iperf((h1,h3))
         net.stop()
 if __name__ == '__main__':
-        setLogLevel('info')
-        performanceTest()
+           setLogLevel('info')
+           performanceTest()
         
     
   
