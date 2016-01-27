@@ -1,6 +1,7 @@
 from mininet.cli import CLI
 from mininet.util import dumpNodeConnections
 from mininet.node import CPULimitedHost
+from mininet.log import setLogLevel
 from mininet.link import TCLink
 class singleTopologyPerformance:
           def __init__(self, k=3):
@@ -24,7 +25,8 @@ def performanceTest():
         net.iperf((h1,h3))
         net.stop()
 if __name__ == '__main__':
-            performanceTest()
+           setLogLevel('info')
+           performanceTest()
         
     
   
