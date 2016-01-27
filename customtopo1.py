@@ -10,7 +10,7 @@ class singleTopologyPerformance(Topo):
                     for h in range(k):
                                 host=self.addHost('h%s'%(h+1),cpu=.4/k)
                                 self.addLink(host,switch, **linloptions)
- def perfprmanceTest():
+ def performanceTest():
         topo=SingleTopologyPerformance(k=5)
         net=Mininet(topo=topo,host=CPULimitedHost,link=TCLink)
         net.start()
