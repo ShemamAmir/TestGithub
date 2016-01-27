@@ -22,7 +22,7 @@ def performanceTest():
         h1,h3=net.get('h1','h3')
         net.iperf((h1,h3))
         net.stop()
-if__name__ == '__main__':
+if __name__ == '__main__':
         setLogLevel('info')
         performanceTest()
         
