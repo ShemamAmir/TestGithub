@@ -14,8 +14,8 @@ class SingleSwitchTopo(Topo):
      self.addLink(host,switch)
  def simpleTest():
  #"create and test simple network"
-   topo = SingleSwitchTopo(n=4)
-   net = Mininet(topo)
+   mytopo = SingleSwitchTopo(n=4)
+   net = Mininet(mytopo)
    net.start()
    print "dumping host connection"
    net.pingAll()
