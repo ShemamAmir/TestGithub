@@ -18,8 +18,8 @@ class SingleSwitchTopo(Topo):
    net = Mininet(topo)
    net.start()
  print "dumping host connection"
-   net.pingAll()
-   net.stop()
+     net.pingAll()
+     net.stop()
  if __name__ == '__main__':
  #tell mininet to print useful info
        setLogLevel('info')
