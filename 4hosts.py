@@ -10,7 +10,7 @@ class SingleSwitchTopo(Topo):
    switch = self.addSwitch('s1')
  #range 
    for h in range(n):
-     host = self.addHost('h%s'(h+1))
+     host = self.addHost('h%s'%(h+1))
      self.addLink(host, switch)
  def simpleTest():
  #"create and test simple network"
