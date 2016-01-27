@@ -13,7 +13,7 @@ class singleTopologyPerformance:
                                 host=self.addHost('h%s'%(h+1),cpu=.4/k)
                                 self.addLink(host,switch, **linloptions)
 def performanceTest():
-        topo=SingleTopologyPerformance(k=5)
+        topol=SingleTopologyPerformance(k=5)
         net=Mininet(topo=topo,host=CPULimitedHost,link=TCLink)
         net.start()
         print "displaying host connection information"
@@ -25,8 +25,8 @@ def performanceTest():
         net.iperf((h1,h3))
         net.stop()
 if __name__ == '__main__':
-           setLogLevel('info')
-           performanceTest()
+          setLogLevel('info')
+          performanceTest()
         
     
   
