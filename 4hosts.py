@@ -2,7 +2,7 @@ from mininet.topo import Topo
 from mininet.util import dumpNodeConnections
 from mininet.log import setLogLevel
 from mininet.net import Mininet
-class SingleSwitchTopo(Topo):
+class SingleSwitchTopo(topo):
  #"single ewitch connected to n hosts"
  def __init__(self,n=2,**opts):
  #initialize topo
