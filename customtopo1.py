@@ -4,8 +4,8 @@ from mininet.node import CPULimitedHost
 from mininet.link import TCLink
 class singleTopologyPerformance:
           def __init__(self, k=3):
-          Topo = singleTopologyPerformance()
-          Topo.__init__(self)
+                    Topo = singleTopologyPerformance()
+                    Topo.__init__(self)
                     switch=self.addSwitch('switch1')
                     linkoptions=dict(bw=10,delay='10ms',max_queue_size=1000,use_htb=true)
                     for h in range(k):
