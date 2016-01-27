@@ -1,5 +1,5 @@
 from mininet.net import Mininet
-from mininet.util import createLink
+from mininet.topo import Topo
 net = Mininet()
 #creating nodes in the network 
 c0 = net.addController()
