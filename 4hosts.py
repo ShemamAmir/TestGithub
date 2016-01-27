@@ -10,18 +10,18 @@ class SingleSwitchTopo(Topo):
    switch =self.addSwitch('s1')
  #range 
    for h in range(n):
- host = self.addHost('h%s'(h+1))
- self.addLink(host,switch)
+     host = self.addHost('h%s'(h+1))
+     self.addLink(host,switch)
  def simpleTest():
  #"create and test simple network"
- topo = SingleSwitchTopo(n=4)
- net = Mininet(topo)
- net.start()
+   topo = SingleSwitchTopo(n=4)
+   net = Mininet(topo)
+   net.start()
  print "dumping host connection"
- net.pingAll()
- net.stop()
+   net.pingAll()
+   net.stop()
  if __name__ == '__main__':
  #tell mininet to print useful info
- setLogLevel('info')
- simpleTest()
+       setLogLevel('info')
+       simpleTest()
  
