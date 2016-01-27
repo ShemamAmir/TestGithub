@@ -3,7 +3,7 @@ from mininet.util import dumpNodeConnections
 from mininet.node import CPULimitedHost
 from mininet.link import TCLink
 class singleTopologyPerformance(Topo):
-def__init__(self,k=3)
+def__init__(self,k=3):
   Topo.__init__(self)
   switch=self.addSwitch('switch1')
   linkoptions=dict(bw=10,delay='10ms',max_queue_size=1000,use_htb=true)
