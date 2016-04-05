@@ -1,4 +1,3 @@
-@@ -1,92 +1,24 @@
  -#!/usr/bin/python
   '''
   Coursera:
