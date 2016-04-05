@@ -119,7 +119,7 @@ def launch ():
         #   topo.add_edge(srcVertex, dstVertex)
 
   #register for switch join events *from the topology module*
-  core.topology.addListenerByName("SwitchJoin", start_switch)
+      core.topology.addListenerByName("SwitchJoin", start_switch)
 
   #register for link-discovery events *from the discovery modules*
-  core.openflow_discovery.addListenerByName("LinkEvent", link_event)
+      core.openflow_discovery.addListenerByName("LinkEvent", link_event)
