@@ -1,12 +1,9 @@
-
-
-  
-  from mininet.topo import Topo
- -from mininet.util import irange
- -from mininet.link import TCLink
- -from mininet.log import setLogLevel
- -from mininet.net import Mininet
- -from mininet.cli import CLI
+ from mininet.topo import Topo
+ from mininet.util import irange
+ from mininet.link import TCLink
+ from mininet.log import setLogLevel
+ from mininet.net import Mininet
+ from mininet.cli import CLI
   
   class CustomTopo(Topo):
       "Simple Data Center Topology"
